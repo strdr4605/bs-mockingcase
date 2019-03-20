@@ -7,7 +7,7 @@
 ## Install
 
 ```
-npm install bs-mockingcase --save
+npm install https://github.com/strdr4605/bs-mockingcase.git --save
 ```
 
 Then add `bs-mockingcase` to `bs-dependencies` in your `bsconfig.json`:
