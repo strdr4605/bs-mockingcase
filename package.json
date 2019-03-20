@@ -1,5 +1,6 @@
 {
   "name": "bs-mockingcase",
+  "description": "Convert a string to mOcKiNgCaSe",
   "version": "0.1.0",
   "scripts": {
     "build": "bsb -make-world",
@@ -7,10 +8,27 @@
     "clean": "bsb -clean-world"
   },
   "keywords": [
-    "BuckleScript"
+    "BuckleScript",
+    "case",
+    "text",
+    "string",
+    "convert"
   ],
-  "author": "",
-  "license": "MIT",
+  "homepage": "https://github.com/strdr4605/bs-mockingcase.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/strdr4605/bs-mockingcase.git"
+  },
+  "bugs": {
+    "url": "https://github.com/strdr4605/bs-mockingcase/issues",
+    "email": "str.dr4605@gmail.com"
+  },
+  "author": "Dragoș Străinu",
+  "license": "ISC",
+  "files": [
+    "src/*",
+    "bsconfig.json"
+  ],
   "devDependencies": {
     "bs-platform": "^4.0.18"
   },
