@@ -22,21 +22,21 @@ Then add `bs-mockingcase` to `bs-dependencies` in your `bsconfig.json`:
 ## Usage
 
 ```reason
-Mockingcase.convertString("mockingcase");
+Mockingcase.convertString1("mockingcase");
 // mOcKiNgCaSe
-Mockingcase.convertArr([|"reasonml", " ", "mockingcase"|]);
+Mockingcase.convertArray1([|"reasonml", " ", "mockingcase"|]);
 // rEaSoNmL MoCkInGcAsE
-Mockingcase.convertStringWithOpts("mockingcase", {"random": true});
+Mockingcase.convertString2("mockingcase", {"random": true, "firstUpper": false, "onlyLetters": false});
 // mOCKIngCAse
-Mockingcase.convertArrWithOpts([|"reasonml", " ", "mockingcase"|], {"random": true});
-// rEaSONmL MocKinGcase
+Mockingcase.convertArray2([|"reasonml", " 2 ", "mockingcase"|], {"random": true, "firstUpper": true, "onlyLetters": true});
+// ReAsOnMl  MoCkInGcAsE
 
-Mockingcase.logFromString("logging");
+Mockingcase.logFromString1("logging");
 // Js.log("lOgGiNg");
-Mockingcase.logFromStringWithOpts("random logging", {"random": true});
+Mockingcase.logFromString2("random logging", {"random": true, "firstUpper": false, "onlyLetters": false});
 // Js.log("RAndOM LoGgiNg");
-Mockingcase.logFromArr([|"array", " ", "logging"|]);
+Mockingcase.logFromArray1([|"array", " ", "logging"|]);
 // Js.log("aRrAy lOgGiNg");
-Mockingcase.logFromArrWithOpts([|"array", " ", "random logging"|], {"random": true});
+Mockingcase.logFromArray2([|"array", " ", "random logging"|], {"random": true, "firstUpper": false, "onlyLetters": false});
 // Js.log("ARray raNdOm loGGiNg");
 ```
