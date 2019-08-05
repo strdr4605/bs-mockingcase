@@ -6,18 +6,18 @@ type options = {
 };
 
 // binding for every type case
-[@bs.module] external convertString: string => string = "mockingcase";
-[@bs.module] external convertArr: array(string) => string = "mockingcase";
+[@bs.module] external convertString1: string => string = "mockingcase";
+[@bs.module] external convertArray1: array(string) => string = "mockingcase";
 [@bs.module]
-external convertStringWithOpts: (string, options) => string = "mockingcase";
+external convertString2: (string, options) => string = "mockingcase";
 [@bs.module]
-external convertArrWithOpts: (array(string), options) => string =
+external convertArray2: (array(string), options) => string =
   "mockingcase";
 
-[@bs.module "mockingcase"] external logFromString: string => unit = "log";
+[@bs.module "mockingcase"] external logFromString1: string => unit = "log";
 [@bs.module "mockingcase"]
-external logFromArr: array(string) => unit = "log";
+external logFromArray1: array(string) => unit = "log";
 [@bs.module "mockingcase"]
-external logFromStringWithOpts: (string, options) => unit = "log";
+external logFromString2: (string, options) => unit = "log";
 [@bs.module "mockingcase"]
-external logFromArrWithOpts: (array(string), options) => unit = "log";
+external logFromArray2: (array(string), options) => unit = "log";
