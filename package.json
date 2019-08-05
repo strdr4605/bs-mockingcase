@@ -30,9 +30,9 @@
     "bsconfig.json"
   ],
   "devDependencies": {
-    "bs-platform": "^4.0.18"
+    "bs-platform": "^5.0.6"
   },
   "dependencies": {
-    "mockingcase": "^1.4.0"
+    "mockingcase": "^1.7.0"
   }
 }
