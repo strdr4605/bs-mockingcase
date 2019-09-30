@@ -3,6 +3,7 @@
   "description": "Convert a string to mOcKiNgCaSe",
   "version": "2.0.0",
   "scripts": {
+    "test": "jest",
     "build": "bsb -make-world",
     "start": "bsb -make-world -w",
     "clean": "bsb -clean-world"
@@ -30,6 +31,7 @@
     "bsconfig.json"
   ],
   "devDependencies": {
+    "@glennsl/bs-jest": "^0.4.9",
     "bs-platform": "^5.0.6"
   },
   "dependencies": {
