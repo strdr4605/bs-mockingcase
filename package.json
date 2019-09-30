@@ -33,6 +33,6 @@
     "bs-platform": "^5.0.6"
   },
   "dependencies": {
-    "mockingcase": "^1.7.0"
+    "@strdr4605/mockingcase": "^1.10.1"
   }
 }
